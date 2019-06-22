@@ -1,11 +1,15 @@
 body {
   font-family: monospace;
-  background-color: #FDF5E6;
+  background-color: #fdf5e6;
 }
 a {
   color: blue;
 }
-h1,h2,h3,h4,h5,
+h1,
+h2,
+h3,
+h4,
+h5,
 .accent,
 a {
   font-weight: 100;
@@ -21,26 +25,29 @@ h3 {
   font-size: 2rem;
 }
 h4,
-.accent,
 a {
   font-size: 1.8rem;
 }
-h5 {
+h5,
+li {
   font-size: 1.4rem;
   margin-left: 100px;
   margin-top: 15px;
+}
+ul {
+  list-style-type: disc;
 }
 p {
   margin-top: 30px;
 }
 header {
   display: flex;
-  padding: 40px;
+  padding: 30px;
   justify-content: space-between;
   line-height: 1.4;
 }
 main {
-  padding: 0 40px 40px;
+  padding: 0 30px 30px;
 }
 section {
   margin-top: 50px;
@@ -58,7 +65,7 @@ section {
   align-items: center;
 }
 .header-photo div {
-    width: 100%;
+  width: 100%;
 }
 .header-photo img {
   width: 100%;
@@ -69,6 +76,39 @@ section {
 }
 .contacts {
   text-align: left;
+}
+.block-header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.block-header h5{
+  margin-top: unset;
+}
+@media (max-width: 961px) {
+  h5,li{
+    margin-left: 5px;
+  }
+  ul{
+    margin-left: 40px;
+  }
+  main {
+    padding: 0 10px 30px;
+  }
+  h1 {
+    font-size: 2.0rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    color: brown;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  h4,
+  a {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 798px) {
   .contacts {
