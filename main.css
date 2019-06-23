@@ -101,6 +101,7 @@ section {
 }
 .block-header h5{
   margin-top: unset;
+  text-align: right;
 }
 .link-git{
   cursor: pointer;
@@ -142,6 +143,9 @@ section {
   }
   .list-no-decor{
     list-style-type: disc;
+  }
+  .block-header h5{
+    text-align: unset;
   }
 }
 @media (max-width: 798px) {
