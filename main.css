@@ -49,6 +49,14 @@ header {
 main {
   padding: 0 30px 30px;
 }
+.about-me{
+  font-style: italic;
+  margin: 0 30px;
+  display: inline;
+}
+.highlighted-text{
+  background-color: #f1f18a;
+}
 section {
   margin-top: 50px;
 }
@@ -108,6 +116,9 @@ section {
   h4,
   a {
     font-size: 1.5rem;
+  }
+  .block-header{
+    display: block;
   }
 }
 @media (max-width: 798px) {
