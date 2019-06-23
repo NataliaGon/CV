@@ -68,11 +68,10 @@ main {
 }
 .about-me{
   font-style: italic;
-  margin: 0 30px;
   display: inline;
 }
 .highlighted-text{
-  background-color: #f1f18a;
+  background-color: greenyellow;
 }
 section {
   margin-top: 70px;
@@ -114,6 +113,12 @@ section {
 }
 .link-git{
   cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  color:black;
+  margin-top: 40px;
+  display: inline-block;
 }
 .link-git h4{
   display: inline-block;
