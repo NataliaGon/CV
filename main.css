@@ -177,9 +177,9 @@ section {
     text-align: center;
     width: 100%;
   }
-  .header-photo img {
+  /* .header-photo img {
     width: 30%;
-  }
+  } */
 }
 @media (max-width: 430px) {
   .contacts {
