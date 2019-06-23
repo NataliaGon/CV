@@ -32,7 +32,6 @@ a {
 h5,
 li {
   font-size: 1.4rem;
-  /* margin-left: 100px; */
   margin-top: 25px;
 }
 ul {
@@ -107,7 +106,7 @@ section {
 .block-header{
   display: flex;
   justify-content: space-between;
-  /* margin-top: 30px; */
+  align-items: center;
 }
 .block-header h5{
   margin-top: unset;
