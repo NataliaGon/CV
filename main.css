@@ -51,8 +51,11 @@ header {
   justify-content: space-between;
   line-height: 1.4;
 }
+.container-contacts{
+  margin-top: 70px;
+}
 main {
-  padding: 0 30px 100px 30px;
+  padding: 70px 30px 100px 30px;
 }
 .about-me{
   font-style: italic;
@@ -89,6 +92,7 @@ section {
 }
 .contacts {
   text-align: left;
+  cursor: pointer;
 }
 .block-header{
   display: flex;
@@ -98,6 +102,17 @@ section {
 .block-header h5{
   margin-top: unset;
 }
+.link-git{
+  cursor: pointer;
+}
+.link-git h4{
+  display: inline-block;
+}
+.icon-git{
+  width: 30px;
+  margin-left: 10px;
+}
+
 @media (max-width: 961px) {
   h5,li{
     margin-left: 5px;
@@ -106,7 +121,7 @@ section {
     margin-left: 20px;
   }
   main {
-    padding: 0 10px 30px;
+    padding: 70px 10px 30px;
   }
   h1 {
     font-size: 2.0rem;
@@ -124,6 +139,9 @@ section {
   }
   .block-header{
     display: block;
+  }
+  .list-no-decor{
+    list-style-type: disc;
   }
 }
 @media (max-width: 798px) {
