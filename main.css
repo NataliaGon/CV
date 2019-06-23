@@ -32,7 +32,7 @@ a {
 h5,
 li {
   font-size: 1.4rem;
-  margin-left: 100px;
+  /* margin-left: 100px; */
   margin-top: 25px;
 }
 ul {
@@ -41,6 +41,16 @@ ul {
 }
 .list-no-decor{
   list-style-type: none;
+}
+.flex{
+  display: flex;
+  margin-top: 50px;
+}
+.col-one{
+  flex: 0 0 15%;
+}
+.col-two{
+  flex: 0 0 85%;
 }
 p {
   margin-top: 30px;
@@ -97,7 +107,7 @@ section {
 .block-header{
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 .block-header h5{
   margin-top: unset;
