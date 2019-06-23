@@ -157,6 +157,9 @@ section {
   .block-header h5{
     text-align: unset;
   }
+  .flex{
+    display: block;
+  }
 }
 @media (max-width: 798px) {
   .contacts {
