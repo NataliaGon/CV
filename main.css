@@ -62,7 +62,14 @@ header {
 }
 .container-contacts{
   margin-top: 70px;
+  text-align: left;
 }
+.download-button{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+} 
 main {
   padding: 70px 30px 100px 30px;
 }
