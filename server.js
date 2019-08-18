@@ -1,6 +1,5 @@
 let http = require("http");
 fs = require('fs');
-
 let htmlFile;
 
 fs.readFile('./index.html', function (err, data) {
@@ -10,9 +9,7 @@ fs.readFile('./index.html', function (err, data) {
     htmlFile = data;
 });
 
-
 http.createServer(function (request, response) {
-        console.log(request.url);
         if (request.url == '/') {
             response.writeHeader(200, {
                 "Content-Type": "text/html"
@@ -20,7 +17,7 @@ http.createServer(function (request, response) {
             response.write(htmlFile);
             response.end();
         }
-        if (request.url == '/http//localhost:8000/cv') {
+        if (request.url == '/http//localhost:3000/cv') {
             response.writeHead(200, {
                 "Content-Type": "text/pdf"
             });
@@ -28,7 +25,6 @@ http.createServer(function (request, response) {
             cvSend.pipe(response);
         } else {
             fs.readFile('.' + request.url, {
-                encoding: 'utf8'
             }, function (err, data) {
                 if (!err) {
                     var dotoffset = request.url.lastIndexOf('.');
@@ -41,9 +37,9 @@ http.createServer(function (request, response) {
                             '.gif': 'image/gif',
                             '.css': 'text/css',
                             '.js': 'text/javascript',
-                            '.woff': 'text/woff',
-                            '.eot': 'text/eot',
-                            '.ttf': 'text/ ttf',
+                            '.woff': 'application/font-woff woff',
+                            '.eot': 'application/font-woff woff',
+                            '.ttf': 'text/ttf',
                             '.svg': 'image/svg',
                             '.pdf': 'text/pdf'
                         } [request.url.substr(dotoffset)];

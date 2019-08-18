@@ -2,7 +2,7 @@ const btnDownloadCV = document.getElementById('js-btn-downlow-cv');
 btnDownloadCV.addEventListener('click', getCV);
 
 function getCV() {
-    fetch('http//localhost:8000/cv')
+    fetch('http//localhost:3000/cv')
         .then(
              resp => resp.blob()
         )

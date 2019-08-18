@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?qvknde');
-  src:  url('fonts/icomoon.eot?qvknde#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?qvknde') format('truetype'),
-    url('fonts/icomoon.woff?qvknde') format('woff'),
-    url('fonts/icomoon.svg?qvknde#icomoon') format('svg');
+  src:  url('/CV.pdf');
+  src:  url('./fonts/icomoon.eot') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf') format('truetype'),
+    url('./fonts/icomoon.woff') format('woff'),
+    url('./fonts/icomoon.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
